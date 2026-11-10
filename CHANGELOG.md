@@ -29,6 +29,7 @@
 - fix: |Telegram| 使用独立的永久内部绑定 token，兼容历史过期绑定；打开邮箱时签发邮箱凭据，阻止内部 token 用于邮箱 API
 - fix: |Worker| 未知邮件、未绑定地址及空地址清理改为分批处理，避免大量积压数据导致 D1 操作超时
 - fix: |用户系统| 邮箱转移确认按钮绑定已有请求加载状态，修复 loading 变量未定义
+- fix: |CI| 为 Upstream Sync 增加 `workflows: write` 权限，允许 `gh repo sync` 合并上游工作流文件更新
 
 ### Improvements
 
